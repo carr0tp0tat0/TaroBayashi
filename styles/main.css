@@ -20,7 +20,7 @@ will be correctly compiled during `gulp serve` and `gulp`
  */
 
 html, body {
-  font-family: 'HiraKakuPro-W6', 'Roboto', 'Helvetica', sans-serif;
+  font-family: 'HiraKakuPro-W3', 'Roboto', 'Helvetica', sans-serif;
   margin: 0;
   padding: 0;
 }
