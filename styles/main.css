@@ -78,7 +78,7 @@ html, body {
 }
 .mdl-demo main > .mdl-layout__tab-panel #map_container {
   position: relative;
-  padding-top: 50%;
+  padding-top: 100%;
 }
 .mdl-demo main > .mdl-layout__tab-panel #map {
   width: 100%;
