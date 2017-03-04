@@ -53,18 +53,19 @@ html, body {
 .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab {
   height: 72px;
   line-height: 72px;
-  width: 64px;
+  width: 20%;
   padding: 0;
 }
 .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab .icon-text{
   font-size: 10px;
   height: 38px;
   line-height: 38px;
+  text-align: center;
   display: block;
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 64px;
+  width: 100%;
 }
 .mdl-demo main > .mdl-layout__tab-panel {
   padding: 8px;
@@ -95,7 +96,7 @@ html, body {
   color: inherit;
 }
 .mdl-demo .mdl-card__actions a {
-  color: #00BCD4;
+  color: #8cbc92;
   margin: 0;
 }
 .mdl-demo .mdl-card__actions a:hover,
