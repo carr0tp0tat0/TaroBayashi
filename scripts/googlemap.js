@@ -19,7 +19,7 @@ function initMap() {
     var northLat = latlngBounds.getNorthEast().lat();
     var southLat = latlngBounds.getSouthWest().lat();
     
-    var fixLatlng = new google.maps.LatLng(southLat + (northLat - southLat) / 4, dst.lng());
+    var fixLatlng = new google.maps.LatLng(southLat + (northLat - southLat) * 0.1, dst.lng());
     var fix = map.setCenter(fixLatlng);
   });
   
