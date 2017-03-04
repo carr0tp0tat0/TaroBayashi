@@ -76,6 +76,10 @@ html, body {
 .mdl-demo main > .mdl-layout__tab-panel.mdl-layout__tab-panel--small-spacing {
   padding-top: 16px;
 }
+.mdl-demo main > .mdl-layout__tab-panel #map_container {
+  position: relative;
+  padding-top: 50%;
+}
 .mdl-demo main > .mdl-layout__tab-panel #map {
   width: 100%;
   height: 100%;

@@ -1,30 +1,15 @@
 function initMap() {
-    var chicago = {lat: 41.85, lng: -87.65};
-    var indianapolis = {lat: 39.79, lng: -86.14};
+    var afrodite = {lat: 35.6904846, lng: 139.7817518};
 
     var map = new google.maps.Map(document.getElementById('map'), {
-      center: chicago,
-      scrollwheel: false,
-      zoom: 7
+      center: afrodite,
+      scrollwheel: true,
+      zoom: 17
     });
 
-    var directionsDisplay = new google.maps.DirectionsRenderer({
-      map: map
-    });
-
-    // Set destination, origin and travel mode.
-    var request = {
-      destination: indianapolis,
-      origin: chicago,
-      travelMode: 'DRIVING'
-    };
-
-    // Pass the directions request to the directions service.
-    var directionsService = new google.maps.DirectionsService();
-    directionsService.route(request, function(response, status) {
-      if (status == 'OK') {
-        // Display the route on the map.
-        directionsDisplay.setDirections(response);
-      }
-    });
+    var marker = new google.maps.Marker({
+    position: afrodite,
+    map: map,
+    title: '東京アフロディテ'
+  });
 }
