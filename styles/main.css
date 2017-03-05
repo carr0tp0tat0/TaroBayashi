@@ -234,48 +234,31 @@ html, body {
   width: 100%;
 }
 .mdl-demo .story-header .story-header-circle {
-  height: 24px;
-  line-height: 24px;
-  font-size: 24px;
+  font-size: 32px;
   display: inline-block;
   margin: 0 8px;
   vertical-align: middle;
   position: relative;
 }
-.mdl-demo .story--background-line:before {
-  content: attr(story-header-circle-before);
+.mdl-demo .story-header .story-header-circle:after {
+  content: attr(story-header-circle-after);
   border-left: 2px solid #cccccc;
   width: 0;
-  height: -webkit-calc(100% - 100px);
-  height:  : calc(100% - 100px);
+  height: 10px;
   display: block;
   position: absolute;
-  top: 100px;
+  top: 12px;
   left: 50%;
-  margin-left: -webkit-calc(-28% + 4px);
-  margin-left: calc(-28% + 4px);
-  z-index: -1;
-}
-.mdl-demo .story--background-line:after {
-  content: attr(story-header-circle-before);
-  border-left: 2px solid #cccccc;
-  width: 0;
-  height: -webkit-calc(100% - 100px);
-  height:  : calc(100% - 100px);
-  display: block;
-  position: absolute;
-  top: 100px;
-  left: 50%;
-  margin-left: -webkit-calc(28% + 8px);
-  margin-left: calc(28% + 8px);
   z-index: -1;
 }
 
 .mdl-demo .story-header .story-header-name {
+  height: 32px;
+  line-height: 32px;
   display: inline-block;
   font-size: 10px;
   vertical-align: middle;
-  width: 36%;
+  width: 30%;
 }
 .mdl-demo .story-header .story-header-name .story-header-firstname {
   display: inline-block;
@@ -290,6 +273,29 @@ html, body {
   display: inline-block;
   color: rgba(97, 97, 97, 0.6);
   width: 20%;
+}
+.mdl-demo .story-content {
+  overflow: visible;
+}
+.mdl-demo .story-content.story-content--newline {
+  margin-top: 32px;
+}
+.mdl-demo .story-content .story-content-date {
+  font-size: 10px;
+  text-align: right;
+  display: inline-block;
+  color: rgba(97, 97, 97, 0.6);
+  position: absolute;
+  top: -20px;
+  left: 100%;
+  width: 100px;
+  margin-left: -100px;
+  z-index: 99;
+}
+.mdl-demo .story-content.mdl-grid--no-spacing .story-content-date {
+  text-align: center;
+  left: 50%;
+  margin-left: -50px;
 }
 .mdl-demo #features section {
   margin-bottom: 72px;

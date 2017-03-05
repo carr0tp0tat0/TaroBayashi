@@ -1,3 +1,15 @@
+// Story Page
+$(function () {
+  var h = $('#story').height() - 80;
+  $('head').append('<style>.mdl-demo .story-header .story-header-circle:after { height: '+ h +'px; } </style>');
+  $('#story-tab').on('click', function() {
+    //var h = $('#story').height() - 100;
+    //$('head').append('<style>.mdl-demo .story-header .story-header-circle:after { height: '+ h +'px; } </style>');
+  });
+});
+
+
+// GoogleMap
 function initMap() {
   var dst = new google.maps.LatLng(35.6904846, 139.7817518);
 
