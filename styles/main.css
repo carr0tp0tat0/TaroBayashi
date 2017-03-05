@@ -45,7 +45,6 @@ html, body {
 }
 .mdl-demo .mdl-layout__tab-bar {
   padding: 0;
-  padding-left: 16px;
   box-sizing: border-box;
   height: 100%;
   width: 100%;
@@ -53,27 +52,68 @@ html, body {
 .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab {
   height: 72px;
   line-height: 72px;
-  width: 64px;
+  width: 20%;
   padding: 0;
 }
 .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab .icon-text{
   font-size: 10px;
   height: 38px;
   line-height: 38px;
+  text-align: center;
   display: block;
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 64px;
+  width: 100%;
 }
 .mdl-demo main > .mdl-layout__tab-panel {
   padding: 8px;
   padding-top: 48px;
 }
+.mdl-demo main > .mdl-layout__tab-panel.mdl-layout__tab-panel--no-spacing {
+  padding: 0;
+}
+.mdl-demo main > .mdl-layout__tab-panel.mdl-layout__tab-panel--small-spacing {
+  padding-top: 16px;
+}
+.mdl-demo main > .mdl-layout__tab-panel #map_container {
+  position: relative;
+  padding-top: 50%;
+}
+.mdl-demo main > .mdl-layout__tab-panel #map {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.mdl-demo .mdl-grid.mdl-grid--story{
+  padding: 0;
+}
+.mdl-demo .mdl-grid--no-spacing.mdl-grid--story{
+  margin-left: 8px;
+  margin-right: 8px;
+}
 .mdl-demo .mdl-card {
   height: auto;
   display: flex;
   flex-direction: column;
+}
+.mdl-demo #gallery .mdl-card {
+  min-height: auto;
+}
+.mdl-demo #gallery .mdl-card:before {
+  content:"";
+  display: block;
+  padding-top: 100%;
+}
+.mdl-demo #gallery .mdl-card > .mdl-card--gallery-contents {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 .mdl-demo .mdl-card > * {
   height: auto;
@@ -95,7 +135,7 @@ html, body {
   color: inherit;
 }
 .mdl-demo .mdl-card__actions a {
-  color: #00BCD4;
+  color: #8cbc92;
   margin: 0;
 }
 .mdl-demo .mdl-card__actions a:hover,
@@ -188,8 +228,68 @@ html, body {
 .mdl-demo .mdl-card .mdl-card__supporting-text > h3:first-child {
   margin-bottom: 24px;
 }
-.mdl-demo .mdl-layout__tab-panel:not(#overview) {
-  /*background-color: white; コンテンツのベースカラー*/
+.mdl-demo .story-header {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+.mdl-demo .story-header .story-header-circle {
+  height: 24px;
+  line-height: 24px;
+  font-size: 24px;
+  display: inline-block;
+  margin: 0 8px;
+  vertical-align: middle;
+  position: relative;
+}
+.mdl-demo .story--background-line:before {
+  content: attr(story-header-circle-before);
+  border-left: 2px solid #cccccc;
+  width: 0;
+  height: -webkit-calc(100% - 100px);
+  height:  : calc(100% - 100px);
+  display: block;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -webkit-calc(-28% + 4px);
+  margin-left: calc(-28% + 4px);
+  z-index: -1;
+}
+.mdl-demo .story--background-line:after {
+  content: attr(story-header-circle-before);
+  border-left: 2px solid #cccccc;
+  width: 0;
+  height: -webkit-calc(100% - 100px);
+  height:  : calc(100% - 100px);
+  display: block;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -webkit-calc(28% + 8px);
+  margin-left: calc(28% + 8px);
+  z-index: -1;
+}
+
+.mdl-demo .story-header .story-header-name {
+  display: inline-block;
+  font-size: 10px;
+  vertical-align: middle;
+  width: 36%;
+}
+.mdl-demo .story-header .story-header-name .story-header-firstname {
+  display: inline-block;
+  float: right;
+}
+.mdl-demo .story-header .story-header-name .story-header-lastname {
+  display: inline-block;
+  float: left;
+}
+.mdl-demo .story-header .story-header-date {
+  font-size: 10px;
+  display: inline-block;
+  color: rgba(97, 97, 97, 0.6);
+  width: 20%;
 }
 .mdl-demo #features section {
   margin-bottom: 72px;
