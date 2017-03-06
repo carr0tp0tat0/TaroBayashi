@@ -30,7 +30,7 @@ function initMap() {
     title: '東京アフロディテ'
   });
 
-  google.maps.event.addListenerOnce(map, 'bounds_changed', function() {
+  /*google.maps.event.addListenerOnce(map, 'bounds_changed', function() {
     //真ん中に位置修正
     var latlngBounds = map.getBounds();
     var northLat = latlngBounds.getNorthEast().lat();
@@ -38,6 +38,6 @@ function initMap() {
     
     var fixLatlng = new google.maps.LatLng(southLat + (northLat - southLat) * 0.12, dst.lng());
     var fix = map.setCenter(fixLatlng);
-  });
+  });*/
   
 }
