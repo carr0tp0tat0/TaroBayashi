@@ -10,8 +10,24 @@ $(function () {
   $('#access-tab').on('click', function(){
     initMap();
   });
+
+  // Swipebox
+  $( '.swipebox' ).swipebox( {
+    useCSS : true, // false will force the use of jQuery for animations
+    useSVG : true, // false to force the use of png for buttons
+    initialIndexOnArray : 0, // which image index to init when a array is passed
+    hideCloseButtonOnMobile : false, // true will hide the close button on mobile devices
+    removeBarsOnMobile : true, // false will show top bar on mobile devices
+    hideBarsDelay : 3000, // delay before hiding bars on desktop
+    videoMaxWidth : 1140, // videos max width
+    beforeOpen: function() {}, // called before opening
+    afterOpen: null, // called after opening
+    afterClose: function() {}, // called after closing
+    loopAtEnd: false // true will return to the first image after the last image is reached
+  } );
   
 });
+
 
 
 // GoogleMap initialize
@@ -29,15 +45,4 @@ function initMap() {
     map: map,
     title: '東京アフロディテ'
   });
-
-  /*google.maps.event.addListenerOnce(map, 'bounds_changed', function() {
-    //真ん中に位置修正
-    var latlngBounds = map.getBounds();
-    var northLat = latlngBounds.getNorthEast().lat();
-    var southLat = latlngBounds.getSouthWest().lat();
-    
-    var fixLatlng = new google.maps.LatLng(southLat + (northLat - southLat) * 0.12, dst.lng());
-    var fix = map.setCenter(fixLatlng);
-  });*/
-  
 }

@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- Common -->
+    <link rel="stylesheet" href="styles/swipebox.min.css">
     <link rel="stylesheet" href="styles/material.min.css">
     <link rel="stylesheet" href="styles/main.css">
 
@@ -142,10 +143,14 @@
         <div class="mdl-layout__tab-panel mdl-layout__tab-panel--small-spacing" id="gallery">
           <section class="section--center mdl-grid ">
             <div class="mdl-cell mdl-cell--2-col mdl-card mdl-shadow--2dp">
-              <div class="mdl-card--gallery-contents">photo</div>
+              <a rel="gallery-1" href="http://swipebox.csag.co/images/image-1.jpg" class="swipebox mdl-card--gallery-contents">
+                <img src="http://swipebox.csag.co/images/image-1.jpg" alt="image">
+              </a>
             </div>
             <div class="mdl-cell mdl-cell--2-col mdl-card mdl-shadow--2dp">
-              <div class="mdl-card--gallery-contents">photo</div>
+              <a rel="gallery-1" href="http://swipebox.csag.co/images/image-2.jpg" class="swipebox mdl-card--gallery-contents">
+                <img src="http://swipebox.csag.co/images/image-2.jpg" alt="image">
+              </a>
             </div>
             <div class="mdl-cell mdl-cell--2-col mdl-card mdl-shadow--2dp">
               <div class="mdl-card--gallery-contents">photo</div>
@@ -204,6 +209,7 @@
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt1u4l08GCBmnG-wBOhSDoEHN24PIZFvg"></script>
+    <script type="text/javascript" src="scripts/jquery.swipebox.min.js"></script>
     <script type="text/javascript" src="scripts/common.js"></script>
     
     <!-- build:js scripts/main.min.js -->
