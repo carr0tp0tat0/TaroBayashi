@@ -7,7 +7,7 @@ $(function () {
 
 
   // Map
-  $('#access-tab').on('click', function(){
+  $('#access-tab').one('click', function(){
     initMap();
   });
 
