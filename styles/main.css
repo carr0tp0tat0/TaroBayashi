@@ -229,9 +229,7 @@ html, body {
   margin-bottom: 24px;
 }
 .mdl-demo .story-header {
-  text-align: center;
-  margin: 0 auto;
-  width: 100%;
+  
 }
 .mdl-demo .story-header .story-header-circle {
   font-size: 32px;
