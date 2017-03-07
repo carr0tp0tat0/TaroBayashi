@@ -5,6 +5,19 @@ $(function () {
   var h = $('#story').height() - 80;
   $('head').append('<style>.mdl-demo .story-header .story-header-circle:after { height: '+ h +'px; } </style>');
 
+  // Story Menu
+  function floatMenu(){
+    var storyHeader = $('#story-header');
+    // スクロール位置がメニューのtop座標を超えたら固定にする
+    if ($('.mdl-layout__tab-bar').offset().top + 72 > $('#story').offset().top + 100) {
+        storyHeader.addClass('is-fixed');
+    }
+    else {
+        storyHeader.removeClass('is-fixed');
+    }
+  };
+  $('.mdl-layout__content').scroll(floatMenu);
+  $('.mdl-layout').bind('touchmove', floatMenu);
 
   // Map
   $('#access-tab').one('click', function(){
@@ -12,7 +25,7 @@ $(function () {
   });
 
   // Swipebox
-  $( '.swipebox' ).swipebox( {
+  $('.swipebox').swipebox( {
     useCSS : true, // false will force the use of jQuery for animations
     useSVG : true, // false to force the use of png for buttons
     initialIndexOnArray : 0, // which image index to init when a array is passed
@@ -27,7 +40,6 @@ $(function () {
   } );
   
 });
-
 
 
 // GoogleMap initialize
