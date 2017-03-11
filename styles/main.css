@@ -232,7 +232,7 @@ html, body {
   background-image: url("../images/bg_story.png"),
       url("../images/bg_story.png");
   background-repeat: repeat-y,repeat-y;
-  background-position: calc(50% - 156px) 100px,calc(50% + 156px) 100px;
+  background-position: calc(50% - 96px) 100px,calc(50% + 96px) 100px;
 }
 .mdl-demo .story-header {
   text-align: center;
@@ -245,7 +245,7 @@ html, body {
   position: fixed;
   top: 72px;
   left: 0;
-  padding: 8px 0 8px 0;
+  padding: 0;
   background-color: #fff;
 
 }
@@ -257,10 +257,9 @@ html, body {
   width: 32px;
   height: 32px;
   display: inline-block;
-  margin: 0 8px;
+  margin: 0;
   padding: 0;
   vertical-align: middle;
-  position: relative;
 }
 
 .mdl-demo .story-header .story-header-name {
@@ -269,27 +268,27 @@ html, body {
   display: inline-block;
   font-size: 10px;
   vertical-align: middle;
-  width: 200px;
+  width: 150px;
 }
 .mdl-demo .story-header .story-header-name .story-header-firstname {
   margin: 0;
   padding: 0;
   display: inline-block;
-  width: 70px;
+  width: 50px;
   text-align: left;
 }
 .mdl-demo .story-header .story-header-name .story-header-lastname {
   margin: 0;
   padding: 0;
   display: inline-block;
-  width: 70px;
+  width: 50px;
   text-align: right;
 }
 .mdl-demo .story-header .story-header-date {
   font-size: 10px;
   display: inline-block;
   color: rgba(97, 97, 97, 0.6);
-  width: 100px;
+  width: 34px;
 }
 
 .mdl-demo .is-fixed .story-header .story-header-date {
