@@ -9,7 +9,7 @@ $(function () {
   function floatMenu(){
     var storyHeader = $('#story-header');
     // スクロール位置がメニューのtop座標を超えたら固定にする
-    if ($('.mdl-layout__tab-bar').offset().top + 72 > $('#story').offset().top + 100) {
+    if ($('.mdl-layout__tab-bar').offset().top > $('#story').offset().top + 16) {
         storyHeader.addClass('is-fixed');
     }
     else {
