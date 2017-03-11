@@ -44,7 +44,7 @@ $(function () {
 
 // GoogleMap initialize
 function initMap() {
-  var dst = new google.maps.LatLng(35.6904846, 139.7817518);
+  var dst = new google.maps.LatLng(35.69041, 139.782024);
 
   var map = new google.maps.Map(document.getElementById('map'), {
     center: dst,
