@@ -9,7 +9,7 @@ $(function () {
   function floatMenu(){
     var storyHeader = $('#story-header');
     // スクロール位置がメニューのtop座標を超えたら固定にする
-    if ($('.mdl-layout__tab-bar').offset().top + 72 > $('#story').offset().top + 100) {
+    if ($('.mdl-layout__tab-bar').offset().top > $('#story').offset().top + 16) {
         storyHeader.addClass('is-fixed');
     }
     else {
@@ -44,7 +44,7 @@ $(function () {
 
 // GoogleMap initialize
 function initMap() {
-  var dst = new google.maps.LatLng(35.6904846, 139.7817518);
+  var dst = new google.maps.LatLng(35.69041, 139.782024);
 
   var map = new google.maps.Map(document.getElementById('map'), {
     center: dst,
